@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/UIscene.unity
+  isLoaded: 1
+  isActive: 1

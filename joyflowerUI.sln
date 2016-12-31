@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{2EACC78B-6655-2323-6FD3-03BC7D054AAB}") = "joyflowerUI", "Assembly-CSharp.csproj", "{D5FCB55C-711A-6A79-2878-2241B2A5AAF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5FCB55C-711A-6A79-2878-2241B2A5AAF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5FCB55C-711A-6A79-2878-2241B2A5AAF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5FCB55C-711A-6A79-2878-2241B2A5AAF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5FCB55C-711A-6A79-2878-2241B2A5AAF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
