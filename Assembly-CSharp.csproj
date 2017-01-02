@@ -47,8 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Camerobo.cs" />
      <Compile Include="Assets\GameDirector.cs" />
-     <Compile Include="Assets\ObjCounter.cs" />
-     <Compile Include="Assets\SphereController.cs" />
+     <Compile Include="Assets\ObjController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-// 左クリックしたオブジェクトを取得する関数(3D)
+// クリックしたアイテムを数えて削除
 
-public class SphereController : MonoBehaviour {
+public class ObjController : MonoBehaviour {
+
+    public GameObject Obj;
 
     public GameObject getClickObject()
     {
@@ -30,13 +32,13 @@ public class SphereController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         GameObject obj = getClickObject();
-        if (obj != null)
+        if (obj == Obj)
         {
             // 以下オブジェクトがクリックされた時の処理
-            Destroy(gameObject);
+            Destroy(Obj);
 
             GameObject director = GameObject.Find("GameDirector");
-            director.GetComponent<GameDirector>().CountObj();
+            director.GetComponent<GameDirector>().CountObj(Obj.name);
 
         }
     }
