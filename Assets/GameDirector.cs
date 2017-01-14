@@ -11,9 +11,8 @@ public class GameDirector : MonoBehaviour {
     private List<int> num_List = new List<int>(); //持っている数リスト
 
     //ItemPanel・ImgPrefabの設定用
-    public GameObject ImgPrefab;
+    public GameObject ItemPrefab;
     public GameObject ItemPanel;
-
 
     //UIの描画
     void SetUI()
@@ -28,11 +27,19 @@ public class GameDirector : MonoBehaviour {
         //リストにしたがってアイテムを順に描画。
         for (int i = name_List.Count - 1; i > -1 ; i--)
         {
-            GameObject item = Instantiate(ImgPrefab) as GameObject;
+            GameObject item = Instantiate(ItemPrefab) as GameObject;
             item.name = name_List[i];
             item.transform.SetParent(ItemPanel.transform, false);
+            
+            Image img = item.GetComponent<Image>();
+            img.sprite = Resources.Load<Sprite>(name_List[i]);
+
             Text txt = item.transform.FindChild("Text").gameObject.GetComponent<Text>();
             txt.text = "" + num_List[i];
+
+            //アニメーションを追加
+            Animator animator = item.GetComponent<Animator>();
+            animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>(name_List[i]);
 
         }
     }
@@ -66,12 +73,12 @@ public class GameDirector : MonoBehaviour {
     void Start () {
 
         // Listに初期値を設定
-        name_List.Add("maru");
-        num_List.Add(2);
-        name_List.Add("sankaku");
-        num_List.Add(3);
-        name_List.Add("shikaku");
-        num_List.Add(1);
+        //name_List.Add("maru");
+        //num_List.Add(2);
+        //name_List.Add("sankaku");
+        //num_List.Add(3);
+        //name_List.Add("shikaku");
+        //num_List.Add(1);
 
         //UIを描画
         SetUI();

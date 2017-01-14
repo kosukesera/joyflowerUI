@@ -48,6 +48,7 @@
      <Compile Include="Assets\Camerobo.cs" />
      <Compile Include="Assets\GameDirector.cs" />
      <Compile Include="Assets\ObjController.cs" />
+     <Compile Include="Assets\ScreenShot.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
